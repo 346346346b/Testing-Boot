@@ -1,0 +1,5 @@
+csv:
+  file: "src/main/resources/test.csv"
+
+testing:
+  questions: 4
