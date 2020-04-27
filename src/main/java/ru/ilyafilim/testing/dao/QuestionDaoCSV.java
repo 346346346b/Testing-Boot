@@ -23,8 +23,8 @@ public class QuestionDaoCSV implements QuestionDao {
     public Question readRow() {
         try {
             currentRow++;
-            InputStream in = new FileInputStream(csvFile);
-            //InputStream in = getClass().getResourceAsStream(csvFile);
+            //InputStream in = new FileInputStream(csvFile);
+            InputStream in = getClass().getResourceAsStream(csvFile);
             BufferedReader br = new BufferedReader(new InputStreamReader(in));
             String line; int c = 0;
             while ((line = br.readLine()) != null) {
