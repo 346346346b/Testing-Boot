@@ -7,3 +7,4 @@ testing:
 spring:
     messages:
       basename: messages
+      encoding: windows-1251

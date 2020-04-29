@@ -18,7 +18,6 @@ public class DialogServiceImpl implements DialogService {
 
     @Override
     public String getDialogContent(String dialog, String[] params) {
-        return messagesSource.getMessage(dialog, params, Locale.ROOT);
-        //return messagesSource.getMessage(dialog, params, Locale.forLanguageTag("ru-RU"));
+        return messagesSource.getMessage(dialog, params, Locale.getDefault());
     }
 }
